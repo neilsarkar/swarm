@@ -1,0 +1,22 @@
+{
+  "name": "swarm",
+  "version": "0.0.0",
+  "description": "Hello World for Docker Swarm",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:neilsarkar/swarm.git"
+  },
+  "author": "Neil Sarkar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neilsarkar/swarm/issues"
+  },
+  "homepage": "https://github.com/neilsarkar/swarm",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
