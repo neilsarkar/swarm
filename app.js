@@ -6,7 +6,7 @@ var port    = process.env.NODE_APP_PORT || 3000;
 var shortid = require('shortid').generate();
 
 app.get('/', function(req, res) {
-  res.json({id: shortid, cool: 'nice', great: 'grand'})
+  res.json({id: shortid, cool: 'nice', great: 'grand', wonderful: 'fantastic'})
 })
 
 app.listen(port, function() {

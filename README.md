@@ -12,3 +12,11 @@ Goals of Project:
 * jenkins
   * run tests
   * auto-deploy container
+
+Setup:
+
+To use Digital Ocean:
+* Set `DO_TOKEN` environment variable from digital ocean API admin.
+
+To use AWS:
+* Download the AWS CLI and run `aws configure`

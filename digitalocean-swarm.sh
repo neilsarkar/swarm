@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # Create three vms. Docs: https://docs.docker.com/machine/drivers/aws/
-docker-machine create -d digitalocean --digitalocean-access-token=8ea2e670c065f692d07eefe51ddef6e9307b843a68e6d55d25a8787a712e97b9 do-manager1
-docker-machine create -d digitalocean --digitalocean-access-token=8ea2e670c065f692d07eefe51ddef6e9307b843a68e6d55d25a8787a712e97b9 do-app1
-docker-machine create -d digitalocean --digitalocean-access-token=8ea2e670c065f692d07eefe51ddef6e9307b843a68e6d55d25a8787a712e97b9 do-app2
+docker-machine create -d digitalocean --engine-install-url https://test.docker.com --digitalocean-access-token="$DO_TOKEN" do-manager1
+docker-machine create -d digitalocean --engine-install-url https://test.docker.com --digitalocean-access-token="$DO_TOKEN" do-app1
+docker-machine create -d digitalocean --engine-install-url https://test.docker.com --digitalocean-access-token="$DO_TOKEN" do-app2
 
 # Create swarm from vms
 docker-machine ssh do-manager1 "docker swarm init --listen-addr $(docker-machine ip do-manager1):2377"
