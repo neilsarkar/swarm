@@ -6,7 +6,7 @@ WORKDIR /src
 
 VOLUME /src
 
-RUN npm install -g nodemon
+RUN npm install -g nodemon > /dev/null 2>&1
 
 CMD ["nodemon", "app.js"]
 
