@@ -6,9 +6,9 @@ Goals of Project:
 * <del>local swarm of apps with round robin load balancer</del>
 * local database that app swarm connects to
 * <del>prod ec2 cluster</del>
-* automatically start a new node when one is killed
-* add node to preferred running size
-* deploy new code with no downtime
+* <del>automatically rebalance when a node goes offline is killed</del>
+* <del>add node to preferred running size</del>
+* <del>deploy new code with no downtime</del>
 * jenkins
   * run tests
   * auto-deploy container

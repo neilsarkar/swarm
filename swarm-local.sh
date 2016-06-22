@@ -21,6 +21,9 @@ docker-machine ssh manager1 "docker service tasks helloswarm"
 
 # Change scale
 # docker-machine ssh manager1 "docker service scale helloswarm=3"
-
+#
+# Deploy
+# docker-machine ssh manager1 "docker service update --image neilsarkar/helloswarm:latest helloswarm"
+#
 # Teardown
 # docker-machine ssh manager1 "docker service rm helloswarm"

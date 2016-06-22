@@ -4,7 +4,7 @@
   "description": "Hello World for Docker Swarm",
   "main": "app.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./swarm-local.sh"
   },
   "repository": {
     "type": "git",
