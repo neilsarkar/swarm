@@ -11,6 +11,8 @@ docker-machine ssh app1 "docker swarm join $(docker-machine ip manager1):2377"
 docker-machine ssh app2 "docker swarm join $(docker-machine ip manager1):2377"
 
 # Create service from helloswarm
+docker build -f ./Dockerfile.production . -t neilsarkar/helloswarm
+docker push neilsarkar/helloswarm
 docker-machine ssh manager1 "docker service create --replicas 3 --name helloswarm --publish 3000:3000/tcp neilsarkar/helloswarm"
 
 # Inspection
